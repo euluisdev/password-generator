@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #252525;
+    color: #8d015e;
 }
 
 html, body {
@@ -27,3 +27,10 @@ input:focus {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+
+#register-banner {
+    background: url("../img/bg-form.avif");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+  }
