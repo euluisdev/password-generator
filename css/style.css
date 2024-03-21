@@ -6,7 +6,8 @@
     color: #8d015e;
 }
 
-html, body {
+html,
+body {
     height: auto;
     min-height: 100vh;
 }
@@ -25,7 +26,7 @@ input:focus {
     margin: 2rem auto;
     display: flex;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 #register-banner {
@@ -33,21 +34,40 @@ input:focus {
     background-size: cover;
     background-position: center;
     width: 50%;
-  }
+}
 
-  #banner-layer { 
-    background-color: rgba(107, 3, 67, 0.7);  
-    height: 100%; 
-    padding: 2rem; 
-    display: flex; 
-    align-items: center; 
-  }    
-  
-  #register-banner h1 {
-    font-size: 4rem; 
+#banner-layer {
+    background-color: rgba(107, 3, 67, 0.7);
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+#register-banner h1 {
+    font-size: 4rem;
     margin-bottom: 1.5rem;
     color: #fff;
     word-spacing: 50rem;
-  }
+}
 
+#register-form {
+    background-color: #f4faf3;
+    padding: 2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#register-form h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+}
   
+#register-form p {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #aaa;
+    font-size: 0.8rem;
+}
