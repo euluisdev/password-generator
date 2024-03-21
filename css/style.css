@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #8d015e;
+    color: #6e6b6e;
 }
 
 html,
@@ -13,7 +13,7 @@ body {
 }
 
 html {
-    background: linear-gradient(180deg, #ea00ff 0%, #00ff0d 100%);
+    background: linear-gradient(180deg, #ea00ff 0%, #051cec 100%);
 }
 
 input:focus {
@@ -37,7 +37,7 @@ input:focus {
 }
 
 #banner-layer {
-    background-color: rgba(107, 3, 67, 0.7);
+    background-color: rgba(26, 3, 107, 0.7);
     height: 100%;
     padding: 2rem;
     display: flex;
@@ -52,7 +52,7 @@ input:focus {
 }
 
 #register-form {
-    background-color: #f4faf3;
+    background-color: #fff;
     padding: 2rem;
     width: 50%;
     display: flex;
