@@ -88,3 +88,14 @@ input:focus {
     border-bottom: 1px solid #aaa;
     padding: 0.6rem 0;
 }
+
+/* #open-generate */
+#open-generate-password {
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+  #open-generate-password:hover {
+    color: #0099ff;
+  }
