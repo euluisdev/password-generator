@@ -94,8 +94,47 @@ input:focus {
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
-  }
-  
-  #open-generate-password:hover {
+}
+
+#open-generate-password:hover {
     color: #0099ff;
-  }
+}
+
+/* #regiter-form */
+
+#register-form #generated-password {
+    border: 1px solid #0099ff;
+    border-radius: 4px;
+    padding: 0.4rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    display: none;
+}
+
+#register-form #generated-password p {
+    margin-bottom: 0.5rem;
+    color: #81d340;
+}
+
+#register-form input [type="submit"],
+#generate-options button,
+#copy-password {
+    background-color: #81d340;
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1rem 1.4rem;
+    max-width: 150px;
+    cursor: pointer;
+    opacity: 0.8;
+    border: none;
+    align-self: flex-end;
+    transition: 0.4s;
+}
+
+
+#register-form input [type="submit"]:hover {
+    opacity: 1;
+}
