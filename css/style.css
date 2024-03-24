@@ -90,13 +90,13 @@ input:focus {
 }
 
 /* #open-generate */
-#open-generate-password {
+#generete-password {
     font-weight: bold;
     cursor: pointer;
     transition: 0.4s;
 }
 
-#open-generate-password:hover {
+#generete-password:hover {
     color: #0099ff;
 }
 
