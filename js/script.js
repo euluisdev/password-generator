@@ -15,9 +15,13 @@ const getLetterUp = () => {
     return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 }
 
-console.log(getLetterUp());
+const getNumber = () => {
+    return Math.floor(Math.random() * 10);
+}
+
+console.log(getNumber())
 
 generatePasswBtn.addEventListener('click', () => {
-    console.log();
+    console.log('teste');
 });
 
