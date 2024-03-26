@@ -8,10 +8,14 @@ const generatorPasswElement = document.querySelector('#generated-password');
     }
 
 const getLetterLower = () => {
-    console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
 
-getLetterLower();
+const getLetterUp = () => {
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+}
+
+console.log(getLetterUp());
 
 generatePasswBtn.addEventListener('click', () => {
     console.log();
