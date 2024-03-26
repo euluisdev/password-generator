@@ -8,7 +8,7 @@ const generatorPasswElement = document.querySelector('#generated-password');
     }
 
 const getLetterLower = () => {
-    console.log(String.fromCharCode(55));
+    console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
 }
 
 getLetterLower();
