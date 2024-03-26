@@ -7,7 +7,13 @@ const generatorPasswElement = document.querySelector('#generated-password');
         throw Error ('Elementos DOM não encontrados!');
     }
 
+const getLetterLower = () => {
+    console.log(String.fromCharCode(55));
+}
+
+getLetterLower();
+
 generatePasswBtn.addEventListener('click', () => {
-    console.log ('Hellow Worldão!');
+    console.log();
 });
 
