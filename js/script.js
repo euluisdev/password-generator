@@ -19,9 +19,7 @@ const getNumber = () => {
     return Math.floor(Math.random() * 10);
 }
 
-console.log(getNumber())
-
 generatePasswBtn.addEventListener('click', () => {
-    console.log('teste');
+    console.log(getNumber());
 });
 
