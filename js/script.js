@@ -20,11 +20,26 @@ const getNumber = () => {
 }
 
 const getSymbol = () => {
-    const symbols = "()[]{}=<>/\,.!@#$%¨&*+-*";
+    const symbols = "()[]{}=<>/,.!@#$%&*+-";
     return symbols[Math.floor(Math.random() * symbols.length)];
 }
 
+const generatePassword = (getLetterLower, getLetterUp, getNumber, getSymbol) => {
+    let password = '';
+
+    const passwordLength = 10;
+
+    const generators = [getLetterLower, getLetterUp, getNumber, getSymbol]
+
+    for (i = 0; i < passwordLength; i = i + generators.length) {
+        generators.forEach(() => {
+            const randomValue = generators[Math.floor(Math.random() * generators.length)]();
+            console.log(randomValue);
+        });
+    }
+}
+
 generatePasswBtn.addEventListener('click', () => {
-    console.log(getSymbol());
+    generatePassword(getLetterLower, getLetterUp, getNumber, getSymbol);
 });
 
