@@ -34,10 +34,11 @@ const generatePassword = (getLetterLower, getLetterUp, getNumber, getSymbol) => 
     for (let i = 0; i < passwordLength; i = i + generators.length) {
         generators.forEach(() => {
             const randomValue = generators[Math.floor(Math.random() * generators.length)]();
-            console.log(randomValue);
+            password += randomValue;
         });
     }
-}
+    console.log(password);
+};
 
 generatePasswBtn.addEventListener('click', () => {
     generatePassword(getLetterLower, getLetterUp, getNumber, getSymbol);
