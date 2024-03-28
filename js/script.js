@@ -25,6 +25,6 @@ const getSymbol = () => {
 }
 
 generatePasswBtn.addEventListener('click', () => {
-    console.log(getNumber());
+    console.log(getSymbol());
 });
 
