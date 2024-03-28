@@ -31,7 +31,7 @@ const generatePassword = (getLetterLower, getLetterUp, getNumber, getSymbol) => 
 
     const generators = [getLetterLower, getLetterUp, getNumber, getSymbol]
 
-    for (i = 0; i < passwordLength; i = i + generators.length) {
+    for (let i = 0; i < passwordLength; i = i + generators.length) {
         generators.forEach(() => {
             const randomValue = generators[Math.floor(Math.random() * generators.length)]();
             console.log(randomValue);
