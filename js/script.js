@@ -19,6 +19,11 @@ const getNumber = () => {
     return Math.floor(Math.random() * 10);
 }
 
+const getSymbol = () => {
+    const symbols = "()[]{}=<>/\,.!@#$%¨&*+-*";
+    return symbols[Math.floor(Math.random() * symbols.length)];
+}
+
 generatePasswBtn.addEventListener('click', () => {
     console.log(getNumber());
 });
