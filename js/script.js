@@ -16,7 +16,7 @@ const getLetterUp = () => {
 }
 
 const getNumber = () => {
-    return Math.floor(Math.random() * 10);
+    return Math.floor(Math.random("") * 10);
 }
 
 const getSymbol = () => {
@@ -37,6 +37,8 @@ const generatePassword = (getLetterLower, getLetterUp, getNumber, getSymbol) => 
             password += randomValue;
         });
     }
+
+    password = password.slice(0, passwordLength);
     console.log(password);
 };
 
