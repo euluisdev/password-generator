@@ -8,6 +8,13 @@ Este é um simples gerador de senhas aleatórias, desenvolvido em JavaScript, qu
 - Inclui letras minúsculas (a-z), letras maiúsculas (A-Z), números (0-9) e símbolos especiais.
 - Interface gráfica simples e intuitiva.
 
+## Tecnologias Utilizadas
+
+- HTML
+- CSS
+- JavaScript
+- Editor de arquivos 
+
 ## Como Usar
 
 1. Clone o repositório para sua máquina local:
