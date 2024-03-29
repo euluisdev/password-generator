@@ -40,6 +40,10 @@ const generatePassword = (getLetterLower, getLetterUp, getNumber, getSymbol) => 
 
     password = password.slice(0, passwordLength);
     console.log(password);
+
+    generatorPasswElement.style.display = "block";
+    generatorPasswElement.querySelector('h4').innerText = password;
+
 };
 
 generatePasswBtn.addEventListener('click', () => {
