@@ -1,11 +1,12 @@
 # Gerador de Senhas Aleatórias - utilizando class POO em javaScript
 
-Este é um simples gerador de senhas aleatórias, desenvolvido em JavaScript, que gera senhas de 10 caracteres contendo letras minúsculas, letras maiúsculas, números e símbolos especiais.
+Este é um simples gerador de senhas aleatórias, desenvolvido em JavaScript aplicando orientação a objeto com 'class' e 'constructor', 
+que gera senhas de 10 caracteres contendo letras minúsculas, letras maiúsculas, números e símbolos especiais do qual for do agrado.
 
 ## Funcionalidades
 
 - Gera senhas aleatórias de 10 caracteres.
-- Inclui letras minúsculas (a-z), letras maiúsculas (A-Z), números (0-9) e símbolos especiais.
+- Inclui letras minúsculas (a-z), letras maiúsculas (A-Z), números (0-9) e símbolos especiais de sua escolha.
 - Interface gráfica simples e intuitiva.
 
 ## Tecnologias Utilizadas
