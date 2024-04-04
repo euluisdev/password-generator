@@ -9,7 +9,11 @@ class GenPassword {
             throw new Error('Um ou mais elementos DOM não encontrados!');
         };
 
-        this.generateBtn.addEventListener('click', () => console.log('teste'));
+        this.generateBtn.addEventListener('click', () => this.getLetterLower());
+    }
+
+    getLetterLower = () => {
+        console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
     }
 }
 
