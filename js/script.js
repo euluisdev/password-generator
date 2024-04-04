@@ -1,6 +1,27 @@
 'use strict'
 
-const generatePasswBtn = document.querySelector('#generete-password');
+class GenPassword {
+    constructor() {
+        const generatePasswBtn = document.querySelector('#generete-password');
+        const generatorPasswElement = document.querySelector('#generated-password');
+
+        if (!this.generateBtn || !this.generated) {
+            throw new Error('Um ou mais elementos DOM não encontrados!');
+        };
+
+        this.generateBtn.addEventListener('click', () => console.log('teste'));
+    }
+}
+
+const passGen1 = new GenPassword();
+
+
+
+
+
+
+
+/* const generatePasswBtn = document.querySelector('#generete-password');
 const generatorPasswElement = document.querySelector('#generated-password');
 
     if (!generatePasswBtn || !generatorPasswElement) {
@@ -49,4 +70,4 @@ const generatePassword = (getLetterLower, getLetterUp, getNumber, getSymbol) => 
 generatePasswBtn.addEventListener('click', () => {
     generatePassword(getLetterLower, getLetterUp, getNumber, getSymbol);
 });
-
+ */
