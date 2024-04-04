@@ -23,6 +23,11 @@ class GenPassword {
     getNuber = () => {
         console.log(Math.floor(Math.random() * 10).toString())
     }
+
+    getSymbols = () => {
+        const symbols = '!@#$%&(){}()-+*/';
+        return console.log(symbols[Math.floor(Math.random() * symbols.length)])
+    }
 }
 
 const passGen1 = new GenPassword();
