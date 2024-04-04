@@ -15,6 +15,10 @@ class GenPassword {
     getLetterLower = () => {
         console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
     }
+
+    getLetterUp = () => {
+        console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 65));
+    }
 }
 
 const passGen1 = new GenPassword();
