@@ -13,15 +13,15 @@ class GenPassword {
     }
 
     getLetterLower = () => {
-        console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 97));
+        return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
     }
 
     getLetterUp = () => {
-        console.log(String.fromCharCode(Math.floor(Math.random() * 26) + 65));
+        return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
     }
 
     getNuber = () => {
-        console.log(Math.floor(Math.random() * 10).toString())
+        return Math.floor(Math.random() * 10).toString();
     }
 
     getSymbols = () => {
