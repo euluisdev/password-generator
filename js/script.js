@@ -2,14 +2,14 @@
 
 class GenPassword {
     constructor() {
-        const generatePasswBtn = document.querySelector('#generete-password');
-        const generatorPasswElement = document.querySelector('#generated-password');
+        this.generateBtn = document.querySelector('#generete-password');
+        this.generated = document.querySelector('#generated-password');
 
         if (!this.generateBtn || !this.generated) {
             throw new Error('Um ou mais elementos DOM não encontrados!');
         };
 
-        this.generateBtn.addEventListener('click', () => this.getNuber());
+        this.generateBtn.addEventListener('click', () => this.getSymbols());
     }
 
     getLetterLower = () => {
@@ -20,7 +20,7 @@ class GenPassword {
         return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
     }
 
-    getNuber = () => {
+    getNumber = () => {
         return Math.floor(Math.random() * 10).toString();
     }
 
