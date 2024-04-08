@@ -9,7 +9,8 @@ class GenPassword {
             throw new Error('Um ou mais elementos DOM não encontrados!');
         };
 
-        this.generateBtn.addEventListener('click', () => this.getSymbols());
+        this.generateBtn.addEventListener('click', () => 
+        this.generatePass(this.getLetterLower, this.getLetterUp, this.getNumber, this.getSymbols));
     }
 
     getLetterLower = () => {
@@ -26,7 +27,7 @@ class GenPassword {
 
     getSymbols = () => {
         const symbols = '!@#$%&(){}()-+*/';
-        return console.log(symbols[Math.floor(Math.random() * symbols.length)])
+        return symbols[Math.floor(Math.random() * symbols.length)];
     }
 
     generatePass = () => {
@@ -36,11 +37,10 @@ class GenPassword {
         for (let i = 0; i < passwordLength; i = i + generators.length) {
             generators.forEach(() => {
                 const randomValue = generators[Math.floor(Math.random() * generators.length)]();
-                password += passwordLength;
+                password += randomValue;
             })
         }
-
-        console.log(password)
+        console.log(password);
         
     }
 }
