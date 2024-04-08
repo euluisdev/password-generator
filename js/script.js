@@ -28,6 +28,21 @@ class GenPassword {
         const symbols = '!@#$%&(){}()-+*/';
         return console.log(symbols[Math.floor(Math.random() * symbols.length)])
     }
+
+    generatePass = () => {
+        let password = '';
+        const passwordLength = 10;
+        const generators = [this.getLetterLower, this.getLetterUp, this.getNumber, this.getSymbols];
+        for (let i = 0; i < passwordLength; i = i + generators.length) {
+            generators.forEach(() => {
+                const randomValue = generators[Math.floor(Math.random() * generators.length)]();
+                password += passwordLength;
+            })
+        }
+
+        console.log(password)
+        
+    }
 }
 
 const passGen1 = new GenPassword();
