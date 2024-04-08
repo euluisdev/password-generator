@@ -40,6 +40,8 @@ class GenPassword {
                 password += randomValue;
             })
         }
+
+        password = password.slice(0, passwordLength);
         console.log(password);
         
     }
