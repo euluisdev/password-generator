@@ -42,8 +42,10 @@ class GenPassword {
         }
 
         password = password.slice(0, passwordLength);
+
+        this.generated.style.display = "block";
+        this.generated.querySelector('h4').innerText = password;
         console.log(password);
-        
     }
 }
 
